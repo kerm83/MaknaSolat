@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text to Speech</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+
+      #container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      select,
+      button {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Text to Speech</h1>
+      <textarea
+        id="text"
+        placeholder="Enter Arabic text to be spoken"
+      ></textarea>
+      <select id="voices"></select>
+      <button onclick="speak()">Speak</button>
+    </div>
+
+    <script>
+      let synth = window.speechSynthesis;
+
+      // Function to populate voices in the dropdown
+      function populateVoices() {
+        let voicesSelect = document.getElementById("voices");
+        let voices = synth.getVoices();
+        voicesSelect.innerHTML = "";
+
+        voices
+          .filter((voice) => voice.lang.startsWith("ar"))
+          .forEach((voice, index) => {
+            let option = document.createElement("option");
+            option.value = index;
+            option.text = voice.name;
+            voicesSelect.appendChild(option);
+          });
+      }
+
+      // Wait for voices to be loaded before populating the dropdown
+      synth.onvoiceschanged = populateVoices;
+
+      // Function to start text-to-speech
+      function speak() {
+        let text = document.getElementById("text").value;
+        let selectedVoice = document.getElementById("voices").value;
+        let voices = synth.getVoices();
+
+        let utterance = new SpeechSynthesisUtterance(text);
+        utterance.voice = voices[selectedVoice];
+        synth.speak(utterance);
+      }
+    </script>
+  </body>
+</html>
