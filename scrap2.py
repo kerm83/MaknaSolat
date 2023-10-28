@@ -19,7 +19,7 @@ while(i<10):
         title = soup.find('h3',class_='progress-box-title')
         titleStr=title.text.strip().replace(" ","")
         print(titleStr)
-
+        print(title)
         # Find the div elements with the class "col_a col text"
         target_div = soup.find_all('div', class_='col_a col text')
 
