@@ -1,9 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Reference to the table element
     const table = document.getElementById('csvTable');
-  
+    const csvTitle ='../3-Rukuk.csv'
+    
+     var title = document.getElementById('pageTitle')
+     title.textContent=csvTitle.slice(5,-4);
     // Fetch the CSV file
-    fetch('1-Iftitah.csv')
+    fetch(csvTitle)
       .then(response => response.text())
       .then(csvData => {
         // Split the CSV data into rows and cells
