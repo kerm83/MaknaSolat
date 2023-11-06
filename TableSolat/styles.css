@@ -3,7 +3,8 @@ table {
     table-layout: auto;
     border-collapse: collapse;
     margin: 0 auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-shadow: 0 0 10px rgba(53, 202, 105, 0.1);
   }
   h1{

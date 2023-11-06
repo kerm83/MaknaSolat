@@ -1,7 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Reference to the table element
     const table = document.getElementById('csvTable');
-    const csvTitle ='../3-Rukuk.csv'
+    const csvTitle ='../1-Iftitah.csv'
+    // const csvTitle ='../2-al-Fatihah.csv'
+    // const csvTitle ='../3-Rukuk.csv'
+    // const csvTitle ='../4-Iktidal.csv'
+    // const csvTitle ='../5-Sujud.csv'
+    // const csvTitle ='../6-DudukAntara2Sujud.csv'
+    // const csvTitle ='../7-TahiyyatAwal.csv'
+    // const csvTitle ='../8-TahiyyatAkhir.csv'
+    // const csvTitle ='../9-Qunut.csv'
     
      var title = document.getElementById('pageTitle')
      title.textContent=csvTitle.slice(5,-4);
