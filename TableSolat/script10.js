@@ -4,15 +4,16 @@ document.addEventListener("DOMContentLoaded", function () {
   // const csvTitle ='../1-Iftitah.csv'
   // const csvTitle ='../2-al-Fatihah.csv'
   // const csvTitle ='../3-Rukuk.csv'
-  const csvTitle = "../4-Iktidal.csv";
+  // const csvTitle ='../4-Iktidal.csv'
   // const csvTitle ='../5-Sujud.csv'
   // const csvTitle ='../6-DudukAntara2Sujud.csv'
   // const csvTitle ='../7-TahiyyatAwal.csv'
   // const csvTitle ='../8-TahiyyatAkhir.csv'
-  // const csvTitle ='../9-Qunut.csv'
+  //const csvTitle ='../9-Qunut.csv'
+  const csvTitle = "../10-QunutNazilah.csv";
 
   var title = document.getElementById("pageTitle");
-  //title.textContent=csvTitle.slice(5,-4);
+  // title.textContent = csvTitle.slice(5, -4);
   // Fetch the CSV file
   fetch(csvTitle)
     .then((response) => response.text())
