@@ -1,11 +1,11 @@
 // script.js
 
 document.getElementById("button1").addEventListener("click", function () {
-  window.location.href = "./TableSolat/Iftitah.html";
+  window.location.href = "TableSolat/Iftitah.html";
 });
 
 document.getElementById("button2").addEventListener("click", function () {
-  window.location.href = "./TableSolat/AlFatihah.html";
+  window.location.href = "TableSolat/AlFatihah.html";
 });
 
 document.getElementById("button3").addEventListener("click", function () {
