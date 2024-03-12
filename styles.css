@@ -62,7 +62,7 @@ button:hover {
 }
 
 .image-container {
-  display: flex;
+  display: inline;
   justify-content: center;
   margin-bottom: 20px;
 }
