@@ -1,41 +1,25 @@
 // script.js
 
-document.getElementById("button1").addEventListener("click", function () {
-  window.location.href = "../TableSolat/Iftitah.html";
-});
-
-document.getElementById("button2").addEventListener("click", function () {
-  window.location.href = "../TableSolat/AlFatihah.html";
-});
-
-document.getElementById("button3").addEventListener("click", function () {
-  window.location.href = "../TableSolat/Rukuk.html";
-});
-
-document.getElementById("button4").addEventListener("click", function () {
-  window.location.href = "../TableSolat/Iktidal.html";
-});
-
-document.getElementById("button5").addEventListener("click", function () {
-  window.location.href = "../TableSolat/Sujud.html";
-});
-
-document.getElementById("button6").addEventListener("click", function () {
-  window.location.href = "../TableSolat/DudukAntara2Sujud.html";
-});
-
-document.getElementById("button7").addEventListener("click", function () {
-  window.location.href = "../TableSolat/TahiyyatAwal.html";
-});
-
-document.getElementById("button8").addEventListener("click", function () {
-  window.location.href = "../TableSolat/TahiyyatAkhir.html";
-});
-
-document.getElementById("button9").addEventListener("click", function () {
-  window.location.href = "../TableSolat/Qunut.html";
-});
-
-document.getElementById("button10").addEventListener("click", function () {
-  window.location.href = "../TableSolat/QunutNazilah.html";
+document.addEventListener("click", function (event) {
+  if (event.target.matches("#button1")) {
+    window.location.href = "../TableSolat/Iftitah.html";
+  } else if (event.target.matches("#button2")) {
+    window.location.href = "../TableSolat/AlFatihah.html";
+  } else if (event.target.matches("#button3")) {
+    window.location.href = "../TableSolat/Rukuk.html";
+  } else if (event.target.matches("#button4")) {
+    window.location.href = "../TableSolat/Iktidal.html";
+  } else if (event.target.matches("#button5")) {
+    window.location.href = "../TableSolat/Sujud.html";
+  } else if (event.target.matches("#button6")) {
+    window.location.href = "../TableSolat/DudukAntara2Sujud.html";
+  } else if (event.target.matches("#button7")) {
+    window.location.href = "../TableSolat/TahiyyatAwal.html";
+  } else if (event.target.matches("#button8")) {
+    window.location.href = "../TableSolat/TahiyyatAkhir.html";
+  } else if (event.target.matches("#button9")) {
+    window.location.href = "../TableSolat/Qunut.html";
+  } else if (event.target.matches("#button10")) {
+    window.location.href = "../TableSolat/QunutNazilah.html";
+  }
 });

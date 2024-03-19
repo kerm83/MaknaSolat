@@ -1,37 +1,36 @@
 /* styles.css */
 
-body {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f0f0;
+/* Include normalize.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+/* Reset default styles */
+body,
+h1,
+button,
+img {
   margin: 0;
   padding: 0;
-  
-  
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-.div{
-width: 200px;
-
-
+/* Your existing styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
 }
-/* header {
-  background-color:#04716d;
-  color: white;
-  text-align: center;
-  border: 1px solid;
-  padding: 5px;
 
-  
-} */
+.div {
+  width: 200px;
+}
 
 h1 {
   font-size: 80px;
-  /* background-color:#04716d; */
   color: #080808;
   text-align: center;
-  /* border: 1px solid; */
   padding: 5px;
-  /* display:flex; */
 }
 
 main {
@@ -46,7 +45,7 @@ main {
 }
 
 button {
-  background-color:#04716d;
+  background-color: #04716d;
   color: white;
   font-size: 18px;
   padding: 10px 20px;
